@@ -12,13 +12,16 @@ const carBrands = [
   { brand: "Nissan", model: "frontier", type: "pickup" },
 ];
 
-  let sedanBrands=carBrands.filter(element=>{
-    let check=element.type
-    if(check==="sedan"){
-      return element
-    }
+  // let sedanBrands=carBrands.filter(element=>{
+  //   let check=element.type
+  //   if(check==="sedan"){
+  //     return element
+  //   }
+  // })
+  let sedans=carBrands.filter((car)=>{
+    return car.type==="sedan"
   })
-  console.log(sedanBrands)
+  console.log(sedans)
 
 /* 2.
  * reverseString takes a string
